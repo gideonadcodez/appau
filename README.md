@@ -12,4 +12,6 @@ Oh and feel free to claim this design as your own. Modify it to your likes. Make
 
 You can give the credit to me or the creator himself. By the way, we are all stealinig like artists🤭
 
+Working very hard to make this very accesible and also happen.
+
 You can help me add more functionality to make it more cooler👌
