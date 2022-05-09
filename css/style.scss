@@ -2,15 +2,19 @@
   font-family: Magnat;
   src: url(../assets/Magnat-TextRegular.woff);
 }
+
 * {
   padding: 0;
   margin: 0;
 }
+
 $head: rgb(23, 23, 23);
 $text: rgb(111, 111, 111);
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: Magnat, font;
   font-size: 15px;
@@ -18,6 +22,7 @@ body {
   transition: all 200ms ease-in-out 0s;
   outline: none;
 }
+
 .sidebar {
   display: flex;
   align-items: center;
@@ -28,12 +33,14 @@ body {
   position: fixed;
   bottom: 0px;
   border-right: 1px solid rgb(226, 226, 226);
+
   .line {
     height: 1px;
     width: 70%;
     background-color: rgb(226, 226, 226);
     margin: 12px 0px 0px;
   }
+
   .texts {
     display: flex;
     align-items: center;
@@ -41,12 +48,14 @@ body {
     transform: rotate(270deg);
     margin: 12px 0px 0px;
     gap: 25px;
+
     a {
       font-size: 18px;
       color: rgb(111, 111, 111);
       text-decoration: none;
       padding: 0px 0px 5px;
       transition: all 200ms ease 0s;
+
       &:hover {
         color: $head;
         transform: scale(1.07);
@@ -54,20 +63,23 @@ body {
       }
     }
   }
+
   .links {
     display: flex;
     flex-direction: column;
+
     a {
       font-size: 15px;
       color: rgb(111, 111, 111);
       margin-bottom: 20px;
       text-decoration: none;
+
       &:hover {
         color: #0e6ffc;
       }
     }
   }
-  
+
   img {
     height: 40px;
     width: 40px;
@@ -75,21 +87,22 @@ body {
     bottom: 20px;
     border-radius: 100%;
     transition: all 200ms ease 0s;
+
     &:hover {
       transform: scale(1.07);
     }
   }
+
   .close {
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 20px;
+    right: 50px;
     color: $text;
     display: none;
-    padding: 10px 20px;
-    border-radius: 10px;
   }
 }
+
 hr {
   width: 30%;
   height: 1px;
@@ -97,41 +110,51 @@ hr {
   margin: 24px 0px;
   border-style: none;
 }
+
 .main {
   max-width: 720px;
   padding: 100px 250px;
+
   h1 {
     font-size: 24px;
     color: $head;
   }
+
   p {
     color: rgb(111, 111, 111);
     margin: 12px 0px 0px;
+
     a {
       color: rgb(23, 23, 23);
       padding: 0px 0px 4px;
       border-bottom: 1px solid rgb(226, 226, 226);
       text-decoration: none;
+
       &:hover {
         color: #0e6ffc;
       }
     }
   }
 }
+
 .projects {
   margin-bottom: 50px;
   padding: 0px 250px;
+
   h1 {
     font-size: 20px;
   }
+
   p {
     color: $text;
     margin: 12px 0px 0px;
   }
+
   .container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
     .card {
       width: 330px;
       height: 330px;
@@ -145,6 +168,7 @@ hr {
         height: auto;
         transition: all 150ms ease 0s;
       }
+
       .overlay {
         opacity: 0;
         width: 100%;
@@ -154,29 +178,35 @@ hr {
         height: 100%;
         transition: all 200ms ease 0s;
         background: rgba(255, 255, 255, 0.5);
+
         .text {
           position: absolute;
           bottom: 20px;
           padding: 20px;
+
           .head {
             color: rgb(14, 111, 252);
             font-size: 18px;
           }
+
           .subtitle {
             color: rgb(23, 23, 23);
             font-size: 14px;
           }
         }
       }
+
       &:hover .overlay {
         opacity: 1;
       }
+
       &:hover img {
         transform: scale(1.2);
       }
     }
   }
 }
+
 .blog-toast {
   position: fixed;
   margin-right: -500px;
@@ -189,16 +219,19 @@ hr {
   padding: 40px;
   border-radius: 10px;
   background: rgb(250, 250, 250);
+
   h1 {
     font-size: 24px;
     color: rgb(23, 23, 23);
   }
+
   p {
     color: rgb(111, 111, 111);
     line-height: 1.5;
     margin: 12px 0px 0px;
   }
 }
+
 .menu {
   font-size: 24px;
   position: fixed;
@@ -208,20 +241,25 @@ hr {
   display: none;
   opacity: 0.8;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
+
 .appear {
-    opacity: 1;
-    margin: 0;
-  }
+  opacity: 1;
+  margin: 0;
+}
+
 @media only screen and (max-width: 800px) {
-    .menu, .close {
-        display: block;
-    }
+
+  .menu{
+    display: block;
+  }
+
   body {
     font-size: 18px;
     line-height: 1.5;
   }
+
   .sidebar {
     width: 100%;
     height: 350px;
@@ -230,35 +268,44 @@ hr {
     z-index: 2;
     border-radius: 10px;
     transition: all 200ms ease 0s;
+    .close{
+      display: block;
+    }
     .texts {
       transform: rotate(0deg);
       justify-content: space-evenly;
     }
+
     .links {
       flex-direction: row;
       gap: 25px;
     }
+    
   }
+
   .main {
     padding: 40px;
   }
+
   .projects {
     align-items: center;
     justify-content: center;
     padding: 40px;
+
     .container {
       display: flex;
       align-items: center;
       justify-content: center;
+
       .card {
         width: 300px;
         height: 300px;
       }
     }
   }
+
   .blog-toast {
     opacity: 1;
-    max-width: 80%;
+    max-width: 60%;
   }
 }
-

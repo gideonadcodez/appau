@@ -8,10 +8,3 @@ His taste for minimal design and simple typographies fused with very user friend
 
 Here is a link to the masterpiece https://rauno.me/
 
-Oh and feel free to claim this design as your own. Modify it to your likes. Make something amazing out of an already existing work as I did. 
-
-You can give the credit to me or the creator himself. By the way, we are all stealinig like artists🤭
-
-Working very hard to make this very accesible and also happen.
-
-You can help me add more functionality to make it more cooler👌
