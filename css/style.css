@@ -14,116 +14,11 @@ html {
 
 body {
   font-family: Magnat, font;
-  font-size: 15px;
+  font-size: 16px;
   color: #171717;
   -webkit-transition: all 200ms ease-in-out 0s;
   transition: all 200ms ease-in-out 0s;
   outline: none;
-}
-
-.sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  bottom: 0px;
-  border-right: 1px solid #e2e2e2;
-}
-
-.sidebar .line {
-  height: 1px;
-  width: 70%;
-  background-color: #e2e2e2;
-  margin: 12px 0px 0px;
-}
-
-.sidebar .texts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  margin: 12px 0px 0px;
-  gap: 25px;
-}
-
-.sidebar .texts a {
-  font-size: 18px;
-  color: #6f6f6f;
-  text-decoration: none;
-  padding: 0px 0px 5px;
-  -webkit-transition: all 200ms ease 0s;
-  transition: all 200ms ease 0s;
-}
-
-.sidebar .texts a:hover {
-  color: #171717;
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-  border-bottom: 1px solid #171717;
-}
-
-.sidebar .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sidebar .links a {
-  font-size: 15px;
-  color: #6f6f6f;
-  margin-bottom: 20px;
-  text-decoration: none;
-}
-
-.sidebar .links a:hover {
-  color: #0e6ffc;
-}
-
-.sidebar img {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  bottom: 20px;
-  border-radius: 100%;
-  -webkit-transition: all 200ms ease 0s;
-  transition: all 200ms ease 0s;
-}
-
-.sidebar img:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-
-.sidebar .close {
-  font-size: 20px;
-  position: absolute;
-  top: 20px;
-  right: 50px;
-  color: #6f6f6f;
-  display: none;
 }
 
 hr {
@@ -262,16 +157,11 @@ hr {
   margin: 12px 0px 0px;
 }
 
-.menu {
-  font-size: 24px;
+.sidenav {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #fafafa;
-  display: none;
-  opacity: 0.8;
-  padding: 10px 20px;
-  border-radius: 8px;
+  right: 150px;
+  top: 150px;
+  margin: 0 auto;
 }
 
 .appear {
@@ -280,66 +170,12 @@ hr {
 }
 
 @media only screen and (max-width: 800px) {
-  .menu {
-    display: block;
-  }
   body {
     font-size: 18px;
     line-height: 1.5;
   }
-  .sidebar {
-    width: 100%;
-    height: 350px;
-    margin-bottom: -400px;
-    background-color: #fafafa;
-    z-index: 2;
-    border-radius: 10px;
-    -webkit-transition: all 200ms ease 0s;
-    transition: all 200ms ease 0s;
-  }
-  .sidebar .close {
-    display: block;
-  }
-  .sidebar .texts {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .sidebar .links {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 25px;
-  }
-  .main {
-    padding: 40px;
-  }
-  .projects {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 40px;
-  }
-  .projects .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .projects .container .card {
-    width: 300px;
-    height: 300px;
+  .main, .projects {
+    padding: 25px;
   }
   .blog-toast {
     opacity: 1;
