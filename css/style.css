@@ -243,7 +243,7 @@ hr {
   }
 }
 
-@media only screen and (min-device-width: 640px) and (max-device-width: 1400px) {
+@media only screen and (min-device-width: 640px) and (max-device-width: 10000px) {
   .nav {
     position: fixed;
     right: 50px;
