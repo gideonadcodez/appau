@@ -1,14 +1,3 @@
-// (generateKey = () => {
-//   let str = prompt("Enter Text");
-//   str = str.toLowerCase().split("");
-//   let chars = `qwertyuiopasdfghjklzxcvbnm1234567890~!@#$%^&*()_+-={}|":[]/.${" "}`;
-//   chars = chars.split("");
-//   console.log(str)
-//   for (let i = 0; i < str.length; i++) {
-//     character = str[i];
-//     console.log(chars.indexOf(character))
-//   }
-// })();
 
 (function () {
   let blogBtn = document.getElementById("blog");
