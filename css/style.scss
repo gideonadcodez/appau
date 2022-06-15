@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 @font-face {
   font-family: Magnat;
   src: url(../assets/Magnat-TextRegular.woff);
@@ -48,7 +46,7 @@ a {
 }
 body {
   background: var(--bg);
-  font-family: "Lato", Magnat;
+  font-family: Magnat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
   transition: 200ms linear;
   outline: none;
