@@ -188,8 +188,7 @@ hr {
   }
   .cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 40px;
@@ -198,7 +197,7 @@ hr {
       height: 330px;
       color: var(--text);
       background-color: var(--filler);
-      border-radius: 15px;
+      border-radius: 5px;
       display: flex;
       align-items: center;
       justify-content: center;
