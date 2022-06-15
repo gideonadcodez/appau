@@ -4,6 +4,15 @@
   font-family: Magnat;
   src: url(../assets/Magnat-TextRegular.woff);
 }
+html {
+  scroll-behavior: smooth;
+  --bg: #fff;
+  --heading: #191919;
+  --text: #5f5f5f;
+  --fill: #5f5f5f;
+  --filler: #f9f9f9;
+  --primary-color: #0e6ffc;
+}
 html[data-theme="light"] {
   --bg: #fff;
   --heading: #191919;
@@ -19,7 +28,7 @@ html[data-theme="dark"] {
   --text: #e5e5e5;
   --fill: #595959;
   --filler: #000;
-  --primary-color: #00AC68;
+  --primary-color: #00ac68;
 }
 * {
   padding: 0;
@@ -30,17 +39,16 @@ h2,
 h3 {
   font-family: Magnat;
   color: var(--heading);
+  font-size: 24px;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 a {
   text-decoration: none;
   font-family: Magnat;
 }
 body {
   background: var(--bg);
-  font-family: "Lato";
+  font-family: "Lato", Magnat;
   font-size: 17px;
   transition: 200ms linear;
   outline: none;
@@ -60,9 +68,8 @@ hr {
   padding: 100px 250px;
 
   h1 {
-    font-size: 28px;
     color: var(--heading);
-    font-family: Magnat;
+    font-size: 32px;
   }
 
   p {
@@ -85,10 +92,6 @@ hr {
 .projects {
   margin-bottom: 50px;
   padding: 0px 250px;
-
-  h1 {
-    font-size: 20px;
-  }
 
   p {
     color: var(--text);
@@ -164,10 +167,9 @@ hr {
   transition: all 200ms ease-in-out 0s;
   padding: 40px;
   border-radius: 10px;
-  background: var(--bg);
-
+  background: var(--filler);
+  overflow: hidden;
   h1 {
-    font-size: 24px;
     color: var(--heading);
   }
 
@@ -180,11 +182,6 @@ hr {
 .socials {
   margin-bottom: 50px;
   padding: 0px 250px;
-
-  h1 {
-    font-size: 20px;
-  }
-
   p {
     color: var(--text);
     margin: 12px 0px 0px;
@@ -207,9 +204,9 @@ hr {
       justify-content: center;
       flex-direction: column;
       transition: 200ms linear;
-&:hover{
-  transform: scale(1.03);
-}
+      &:hover {
+        transform: scale(1.03);
+      }
       img {
         height: 40px;
         margin: 20px 0 15px 20px;
@@ -219,10 +216,10 @@ hr {
         font-size: 22px;
         margin: 18px;
         text-align: center;
-       font-family: Magnat;
-       color: var(--heading);
+        font-family: Magnat;
+        color: var(--heading);
       }
-      .dribble-btn{
+      .dribble-btn {
         display: block;
         background-color: #ea4c89;
         color: #fff;
@@ -232,12 +229,12 @@ hr {
         padding: 10px;
         border-radius: 25px;
         transition: 200ms linear;
-        &:hover{
+        &:hover {
           background-color: #fff;
-        color: #ea4c89;
+          color: #ea4c89;
         }
       }
-      .twitter-btn{
+      .twitter-btn {
         display: block;
         background-color: #00acee;
         color: #fff;
@@ -247,12 +244,12 @@ hr {
         padding: 10px;
         border-radius: 25px;
         transition: 200ms linear;
-        &:hover{
+        &:hover {
           background-color: #fff;
-        color: #00acee;
+          color: #00acee;
         }
       }
-      .github-btn{
+      .github-btn {
         display: block;
         background-color: var(--heading);
         color: var(--bg);
@@ -261,11 +258,10 @@ hr {
         text-align: center;
         padding: 10px;
         border-radius: 25px;
-
       }
-      .medium-btn{
+      .medium-btn {
         display: block;
-        background-color: #00AC68;
+        background-color: #00ac68;
         color: #fff;
         width: 60%;
         margin: 0 auto;
@@ -273,9 +269,9 @@ hr {
         padding: 10px;
         border-radius: 25px;
         transition: 200ms linear;
-        &:hover{
+        &:hover {
           background-color: #fff;
-        color: #00AC68;
+          color: #00ac68;
         }
       }
     }
@@ -293,7 +289,8 @@ hr {
   }
 
   .main,
-  .projects,.socials {
+  .projects,
+  .socials {
     padding: 20px;
   }
   .projects {
@@ -309,6 +306,7 @@ hr {
   .blog-toast {
     opacity: 1;
     width: 70%;
+    border-radius: 0;
   }
   .nav {
     position: fixed;

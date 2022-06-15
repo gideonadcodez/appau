@@ -4,6 +4,16 @@
   src: url(../assets/Magnat-TextRegular.woff);
 }
 
+html {
+  scroll-behavior: smooth;
+  --bg: #fff;
+  --heading: #191919;
+  --text: #5f5f5f;
+  --fill: #5f5f5f;
+  --filler: #f9f9f9;
+  --primary-color: #0e6ffc;
+}
+
 html[data-theme="light"] {
   --bg: #fff;
   --heading: #191919;
@@ -19,7 +29,7 @@ html[data-theme="dark"] {
   --text: #e5e5e5;
   --fill: #595959;
   --filler: #000;
-  --primary-color: #00AC68;
+  --primary-color: #00ac68;
 }
 
 * {
@@ -32,10 +42,7 @@ h2,
 h3 {
   font-family: Magnat;
   color: var(--heading);
-}
-
-html {
-  scroll-behavior: smooth;
+  font-size: 24px;
 }
 
 a {
@@ -45,7 +52,7 @@ a {
 
 body {
   background: var(--bg);
-  font-family: "Lato";
+  font-family: "Lato", Magnat;
   font-size: 17px;
   -webkit-transition: 200ms linear;
   transition: 200ms linear;
@@ -67,9 +74,8 @@ hr {
 }
 
 .main h1 {
-  font-size: 28px;
   color: var(--heading);
-  font-family: Magnat;
+  font-size: 32px;
 }
 
 .main p {
@@ -91,10 +97,6 @@ hr {
 .projects {
   margin-bottom: 50px;
   padding: 0px 250px;
-}
-
-.projects h1 {
-  font-size: 20px;
 }
 
 .projects p {
@@ -179,11 +181,11 @@ hr {
   transition: all 200ms ease-in-out 0s;
   padding: 40px;
   border-radius: 10px;
-  background: var(--bg);
+  background: var(--filler);
+  overflow: hidden;
 }
 
 .blog-toast h1 {
-  font-size: 24px;
   color: var(--heading);
 }
 
@@ -196,10 +198,6 @@ hr {
 .socials {
   margin-bottom: 50px;
   padding: 0px 250px;
-}
-
-.socials h1 {
-  font-size: 20px;
 }
 
 .socials p {
@@ -314,7 +312,7 @@ hr {
 
 .socials .cards .card .medium-btn {
   display: block;
-  background-color: #00AC68;
+  background-color: #00ac68;
   color: #fff;
   width: 60%;
   margin: 0 auto;
@@ -327,7 +325,7 @@ hr {
 
 .socials .cards .card .medium-btn:hover {
   background-color: #fff;
-  color: #00AC68;
+  color: #00ac68;
 }
 
 .appear {
@@ -341,7 +339,8 @@ hr {
     line-height: 1.5;
   }
   .main,
-  .projects, .socials {
+  .projects,
+  .socials {
     padding: 20px;
   }
   .projects .container {
@@ -360,6 +359,7 @@ hr {
   .blog-toast {
     opacity: 1;
     width: 70%;
+    border-radius: 0;
   }
   .nav {
     position: fixed;
