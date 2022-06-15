@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/avatar.png" />
+    <!-- Microsoft application tile icons and color settings -->
+    <meta name="msapplication-TileColor" content="#0e6ffc" />
+    <meta name="msapplication-TileImage" content="/assets/me.jpg" />
+    <!-- set theme color -->
+    <meta name="theme-color" content="#0e6ffc" />
+    <meta charset="UTF-8" />
 </head>
 <body>
    <center>
@@ -13,5 +21,20 @@
         Oops! Something Went Wrong Here. I am fixing it as you see this
     </h1>
    </center>
+
+   <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker
+          .register('service-worker.js')
+          .then(reg => {
+            console.log('Service worker registered!', reg);
+          })
+          .catch(err => {
+            console.log('Service worker registration failed: ', err);
+          });
+      });
+    }
+  </script>
 </body>
 </html>

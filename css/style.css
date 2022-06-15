@@ -39,7 +39,6 @@ html[data-theme="dark"] {
 h1,
 h2,
 h3 {
-  font-family: Magnat;
   color: var(--heading);
   font-size: 24px;
 }
@@ -67,9 +66,14 @@ hr {
   border-style: none;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 .main {
   max-width: 720px;
-  padding: 100px 250px;
+  padding: 100px 200px;
 }
 
 .main h1 {
@@ -95,7 +99,7 @@ hr {
 
 .projects {
   margin-bottom: 50px;
-  padding: 0px 250px;
+  padding: 0px 200px;
 }
 
 .projects p {
@@ -168,6 +172,36 @@ hr {
           transform: scale(1.2);
 }
 
+.tooltip {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: var(--bg);
+  color: var(--text);
+  text-align: center;
+  padding: 8px 16px;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+  right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .blog-toast {
   position: fixed;
   margin-right: -1000px;
@@ -196,7 +230,7 @@ hr {
 
 .socials {
   margin-bottom: 50px;
-  padding: 0px 250px;
+  padding: 0px 200px;
 }
 
 .socials p {
