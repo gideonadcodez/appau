@@ -8,3 +8,4 @@ His taste for minimal design and simple typographies fused with very user friend
 
 Here is a link to the masterpiece https://rauno.me/
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f8a23aa-3d70-4edc-a6dd-aa541c383cd4/deploy-status)](https://app.netlify.com/sites/appau/deploys)
