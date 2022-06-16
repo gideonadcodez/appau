@@ -416,6 +416,7 @@ form .container textarea {
   -webkit-transition: 200ms linear;
   transition: 200ms linear;
   margin-bottom: 15px;
+  font-family: Magnat;
 }
 
 form .container input:focus,

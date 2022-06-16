@@ -3,28 +3,25 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-6DR42NTNSP"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DR42NTNSP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-      gtag("config", "G-6DR42NTNSP");
-    </script>
+    gtag("config", "G-6DR42NTNSP");
+  </script>
   <!-- link to manifest.json file -->
   <link rel="manifest" href="./manifest.json" />
   <!-- link to iOS icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/me.png" />
   <!-- Microsoft application tile icons and color settings -->
-  <meta name="msapplication-TileColor" content="#0e6ffc" />
+  <meta name="msapplication-TileColor" content="#191919" />
   <meta name="msapplication-TileImage" content="/assets/me.png" />
   <!-- set theme color -->
-  <meta name="theme-color" content="#0e6ffc" />
+  <meta name="theme-color" content="#191919" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +41,7 @@
     <p>Self Taught Web Developer</p>
     <hr />
     <p>
-      Front-End Unicorn 🦄 Solving problems with Code, Design and Writing.❤️🚀
+      Front-End Developer. Solving problems with Code, Design and Writing.❤️🚀
     </p>
     <p>
       Giving back by contributing to the
@@ -206,36 +203,20 @@
     <div class="container">
       <div class="contact-form">
 
-        <input type="text" name="name" aria-label="name" placeholder="May I know your name?">
+        <input type="text" name="name" aria-label="name" placeholder="May I know your name?" required>
 
-        <input type="email" name="email" aria-label="email" placeholder="How to reach you">
-        <textarea name="message" cols="30" rows="10" placeholder="Whats on your mind?"></textarea>
+        <input type="email" name="email" aria-label="email" placeholder="How to reach you" required>
+        <textarea name="message" cols="30" rows="10" placeholder="Whats on your mind?" required></textarea>
         <button type="submit">Send</button>
       </div>
     </div>
   </form>
   <footer>
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button"
-      data-slug="aceslice" data-color="var(--primary-color)" data-emoji="" data-font="Cookie" data-text="Support my work"
-      data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
-      <p>&copy; Designed And Built By Gideon Appau</p>
+      data-slug="aceslice" data-color="var(--primary-color)" data-emoji="" data-font="Cookie"
+      data-text="Support my work" data-outline-color="#000000" data-font-color="#ffffff"
+      data-coffee-color="#FFDD00"></script>
+    <p>&copy; Designed And Built By Gideon Appau</p>
   </footer>
   <script src="main.js"></script>
-  <!-- initiate the service worker -->
-  <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("service-worker.js")
-            .then((reg) => {
-              console.log("Service worker registered!", reg);
-            })
-            .catch((err) => {
-              console.log("Service worker registration failed: ", err);
-            });
-        });
-      }
-  </script>
-</body>
-
 </html>
