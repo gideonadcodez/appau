@@ -100,6 +100,7 @@ img {
 .projects {
   margin-bottom: 50px;
   padding: 0px 200px;
+  max-width: 720px;
 }
 
 .projects p {
@@ -228,8 +229,7 @@ img {
 }
 
 .socials {
-  margin-bottom: 50px;
-  padding: 0px 200px;
+  padding: 80px 200px;
 }
 
 .socials p {
@@ -357,9 +357,154 @@ img {
   color: #00ac68;
 }
 
+form {
+  padding: 0 200px;
+}
+
+form p {
+  color: var(--text);
+  margin: 12px 0px 0px;
+}
+
+form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form .container .contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+form .container input,
+form .container textarea {
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1.5px solid var(--fill);
+  outline: none;
+  background-color: transparent;
+  color: var(--text);
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  margin-bottom: 15px;
+}
+
+form .container input:focus,
+form .container textarea:focus {
+  border: 1.5px solid var(--text);
+}
+
+form .container input::-webkit-input-placeholder,
+form .container textarea::-webkit-input-placeholder {
+  font-family: Magnat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .container input:-ms-input-placeholder,
+form .container textarea:-ms-input-placeholder {
+  font-family: Magnat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .container input::-ms-input-placeholder,
+form .container textarea::-ms-input-placeholder {
+  font-family: Magnat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .container input::placeholder,
+form .container textarea::placeholder {
+  font-family: Magnat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .container button {
+  display: block;
+  width: 70%;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-family: Magnat;
+}
+
 .appear {
   opacity: 1;
   margin: 0;
+}
+
+footer {
+  padding: 80px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+  background-color: var(--filler);
+}
+
+footer .btns {
+  margin-bottom: 50px;
+}
+
+footer .hire {
+  color: var(--text);
+  border: 1.5px solid var(--text);
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  margin-bottom: 20px;
+}
+
+footer .hire:hover {
+  background-color: var(--heading);
+  color: var(--bg);
+}
+
+footer p {
+  color: var(--text);
+  margin-top: 20px;
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 1000px) {
@@ -369,7 +514,9 @@ img {
   }
   .main,
   .projects,
-  .socials {
+  .socials,
+  form,
+  footer {
     padding: 20px;
   }
   .projects .container {
@@ -414,6 +561,13 @@ img {
   }
   .nav .icon:hover {
     fill: var(--primary-color);
+  }
+  form .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
   }
 }
 
