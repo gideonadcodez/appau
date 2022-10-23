@@ -158,13 +158,15 @@ body {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 40px;
-  padding: 15px;
+  padding: 20px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .work .card img {
   width: 500px;
   height: 300px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .work .card .texts {
@@ -203,6 +205,11 @@ body {
 .work .card .texts button:hover {
   -webkit-box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
           box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
+}
+
+.work .card:hover {
+  -webkit-box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
