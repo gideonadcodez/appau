@@ -12,7 +12,7 @@ html {
   --text-color: #354b5c;
   --filler: #fff;
   --font: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html[data-theme="light"] {
@@ -200,11 +200,54 @@ body {
   cursor: pointer;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
+  margin-bottom: 16px;
 }
 
 .work .card .texts button:hover {
   -webkit-box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
           box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
+}
+
+.work .card .texts .tags {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work .card .texts .tags .tag {
+  font-size: 1rem;
+  color: #6e6e6e;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 0 2px var(--bg);
+          box-shadow: 0 0 0 2px var(--bg);
+  border-radius: 25px;
+}
+
+.work .card .texts .tags .tag a {
+  display: inline-block;
+  position: relative;
+  color: #6e6e6e;
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+}
+
+.work .card .texts .tags .tag a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--color);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .work .card:hover {
