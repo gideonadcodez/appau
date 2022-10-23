@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,6 +51,7 @@ body {
     h1 {
       font-size: 40px;
       margin-bottom: 32px;
+      font-family: "Space Grotesk", var(--font);
     }
     p {
       width: 350px;
@@ -60,7 +62,7 @@ body {
       width: 100%;
       height: 50px;
       border: none;
-      font-family: var(--font);
+      font-family: "Space Grotesk", var(--font);
       font-size: 18px;
       transition: 200ms ease;
       border-radius: 10px;
@@ -106,6 +108,7 @@ body {
   margin-bottom: 40px;
   .title {
     margin-bottom: 32px;
+    font-family: "Space Grotesk", var(--font);
   }
   .card {
     width: 100%;
@@ -127,6 +130,7 @@ body {
       padding: 25px;
       h2 {
         margin-bottom: 16px;
+        font-family: "Space Grotesk", var(--font);
       }
       p {
         width: 300px;
@@ -144,7 +148,7 @@ body {
         color: #fff;
         border: none;
         font-size: 17px;
-        font-family: var(--font);
+        font-family: "Space Grotesk", var(--font);
         border-radius: 5px;
         cursor: pointer;
         transition: 200ms ease-in-out;
@@ -169,6 +173,7 @@ body {
             position: relative;
             color: #6e6e6e;
             text-decoration: none;
+            font-family: "Space Grotesk", var(--font);
             padding: 0.5rem 1rem 0.5rem 2rem;
             &::before {
               content: "";
