@@ -210,6 +210,8 @@ body {
 .work .card .texts button:hover {
   -webkit-box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
           box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .work .card .texts .tags {
@@ -227,7 +229,6 @@ body {
 .work .card .texts .tags .tag {
   font-size: 1rem;
   color: #6e6e6e;
-  font-weight: bold;
 }
 
 .work .card .texts .tags .tag a {
@@ -255,6 +256,8 @@ body {
 .work .card:hover {
   -webkit-box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
           box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
