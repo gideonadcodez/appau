@@ -256,8 +256,6 @@ body {
 .work .card:hover {
   -webkit-box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
           box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
