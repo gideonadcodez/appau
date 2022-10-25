@@ -14,6 +14,7 @@
 
       gtag("config", "G-6DR42NTNSP");
     </script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
@@ -52,7 +53,7 @@
     <section class="work" id="work">
       <h1 class="title">My Work</h1>
 
-      <div class="card">
+      <div class="card" data-aos="zoom-out">
         <img src="./swipenews.png" alt="screenshot" />
         <div class="texts">
           <h2 class="head">Swipe News</h2>
@@ -73,7 +74,7 @@
           </ul>
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <img src="https://picsum.photos/500/300" alt="screenshot" loading="lazy"/>
         <div class="texts">
           <h2 class="head">Passenger</h2>
@@ -84,8 +85,8 @@
           <button>Read case study</button>
         </div>
       </div>
-      <div class="card">
-        <img src="/img19.jpg" alt="screenshot" />
+      <div class="card" data-aos="zoom-in">
+        <img src="http://placeimg.com/640/480/tech" alt="screenshot" />
         <div class="texts">
           <h2 class="head">Passenger</h2>
           <p class="description">
@@ -95,8 +96,8 @@
           <button>Read case study</button>
         </div>
       </div>
-      <div class="card">
-        <img src="/img0.jpg" alt="screenshot" />
+      <div class="card" data-aos="zoom-out">
+        <img src="/img19.jpg" alt="screenshot" />
         <div class="texts">
           <h2 class="head">Passenger</h2>
           <p class="description">
@@ -109,5 +110,9 @@
     </section>
 
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
