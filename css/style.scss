@@ -48,6 +48,9 @@ body {
   width: 850px;
   margin-bottom: 40px;
   header {
+    a {
+      text-decoration: none;
+    }
     h1 {
       font-size: 40px;
       margin-bottom: 32px;
