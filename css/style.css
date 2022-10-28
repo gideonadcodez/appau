@@ -281,7 +281,7 @@ body {
   .topnav header .msg-btn,
   .topnav header .resume {
     display: block;
-    height: 55px;
+    height: 60px;
     border-radius: 10px;
   }
   .topnav .links {
