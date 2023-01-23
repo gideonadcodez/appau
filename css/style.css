@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -17,15 +16,15 @@ html {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html[data-theme="light"] {
+html[data-theme=light] {
   --bg: #f0f8ff;
   --text-color: #354b5c;
   --filler: #fff;
   --head: #6e6e6e;
 }
 
-html[data-theme="dark"] {
-  --bg: url(../img19.jpg) no-repeat fixed;
+html[data-theme=dark] {
+  --bg: linear-gradient(256deg, #081f3d, #000d1a);
   --text-color: #d3d3d3;
   --filler: #0000001a;
   -head: #d9d9d9;
@@ -41,54 +40,34 @@ body {
   background: var(--bg);
   line-height: 1.5em;
   color: var(--text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transition: 200ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   transition: 200ms ease-in-out;
   padding: 32px;
   font-size: 17px;
 }
 
 .topnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  justify-content: space-between;
   width: 850px;
   margin-bottom: 40px;
 }
-
 .topnav header a {
   text-decoration: none;
 }
-
 .topnav header h1 {
   font-size: 40px;
   margin-bottom: 32px;
   font-family: "Space Grotesk", var(--font);
 }
-
 .topnav header p {
   width: 350px;
   margin-bottom: 32px;
 }
-
 .topnav header button {
   display: block;
   width: 100%;
@@ -96,48 +75,39 @@ body {
   border: none;
   font-family: "Space Grotesk", var(--font);
   font-size: 18px;
-  -webkit-transition: 200ms ease;
   transition: 200ms ease;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 16px;
 }
-
 .topnav header button:hover {
   background: transparent;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
-  -webkit-box-shadow: 5px 5px var(--primary-color);
-          box-shadow: 5px 5px var(--primary-color);
+  box-shadow: 5px 5px var(--primary-color);
 }
-
 .topnav header .msg-btn {
   background: var(--primary-color);
   color: #fff;
   display: none;
 }
-
 .topnav header .resume {
   background-color: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   display: none;
 }
-
 .topnav .links {
   display: block;
 }
-
 .topnav .links a {
   text-decoration: none;
   color: grey;
   font-size: 15px;
-  -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   padding: 0 0 5px;
   margin-right: 16px;
 }
-
 .topnav .links a:hover {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
@@ -147,55 +117,40 @@ body {
   max-width: 1280px;
   margin-bottom: 40px;
 }
-
 .work .title {
   margin-bottom: 32px;
   font-family: "Space Grotesk", var(--font);
 }
-
 .work .card {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: var(--filler);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 40px;
-  -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
-
 .work .card img {
   width: 500px;
   height: 300px;
 }
-
 .work .card .texts {
   padding: 25px;
 }
-
 .work .card .texts h2 {
   margin-bottom: 16px;
   font-family: "Space Grotesk", var(--font);
 }
-
 .work .card .texts p {
   width: 300px;
   margin-bottom: 16px;
   color: var(--head);
 }
-
 .work .card .texts a {
   text-decoration: none;
 }
-
 .work .card .texts button {
   width: 100%;
   display: block;
@@ -207,35 +162,25 @@ body {
   font-family: "Space Grotesk", var(--font);
   border-radius: 8px;
   cursor: pointer;
-  -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   margin-bottom: 16px;
 }
-
 .work .card .texts button:hover {
-  -webkit-box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
-          box-shadow: 0 8px 15px rgba(13, 109, 253, 0.354);
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  box-shadow: 0 8px 15px hsla(216deg, 98%, 52%, 0.354);
+  transform: scale(1.03);
 }
-
 .work .card .texts .tags {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .work .card .texts .tags .tag {
   font-size: 1rem;
   color: #6e6e6e;
 }
-
 .work .card .texts .tags .tag a {
   display: inline-block;
   position: relative;
@@ -244,7 +189,6 @@ body {
   font-family: "Space Grotesk", var(--font);
   padding: 0.5rem 1rem 0.5rem 2rem;
 }
-
 .work .card .texts .tags .tag a::before {
   content: "";
   position: absolute;
@@ -254,13 +198,10 @@ body {
   height: 0.5rem;
   border-radius: 100%;
   background-color: var(--color);
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .work .card:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
@@ -280,7 +221,7 @@ body {
     font-size: 24px;
   }
   .topnav header .msg-btn,
-  .topnav header .resume {
+.topnav header .resume {
     display: block;
     height: 60px;
     border-radius: 10px;
@@ -292,10 +233,7 @@ body {
     width: 100%;
   }
   .work .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0;
   }
   .work .card img {
@@ -318,5 +256,4 @@ body {
   .about .container {
     width: 100%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

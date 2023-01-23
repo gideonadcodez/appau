@@ -22,7 +22,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --bg: url(../img19.jpg) no-repeat fixed;
+  --bg: linear-gradient(256deg, #081f3d, #000d1a);
   --text-color: #d3d3d3;
   --filler: #0000001a;
   -head: #d9d9d9;
