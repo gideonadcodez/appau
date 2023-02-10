@@ -109,6 +109,7 @@ body {
     #toggle {
       font-size: 20px;
       margin-left: 30px;
+      color: var(--primary-color);
     }
   }
 }
@@ -247,6 +248,7 @@ footer {
         right: 0;
         font-size: 24px;
         border-radius: 50px;
+        z-index: 999;
       }
     }
   }

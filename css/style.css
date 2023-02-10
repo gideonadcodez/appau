@@ -114,6 +114,7 @@ body {
 .topnav .links #toggle {
   font-size: 20px;
   margin-left: 30px;
+  color: var(--primary-color);
 }
 
 .work {
@@ -253,6 +254,7 @@ footer {
     right: 0;
     font-size: 24px;
     border-radius: 50px;
+    z-index: 999;
   }
   .work {
     width: 100%;
