@@ -39,23 +39,26 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap"
       rel="stylesheet"
     />
-    <title>Gideon Appau - Portfolio</title>
+    <title>Gideon Appau | Mobile and Web App Developer</title>
     <link rel="apple-touch-icon" href="/assets/favicon.ico" />
     <meta
       name="description"
-      content="Hi! I am a Frontend engineer strongly focused on
-    creating beautiful, functional UI's"
+      content="Cross-Platform Web and Mobile App Developer "
     />
-
+    <script
+      src="https://kit.fontawesome.com/ef32282a06.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <nav class="topnav">
       <header>
-        <h1>Gideon Appau</h1>
+        <h1 id="topnav">Gideon Appau</h1>
+
         <p>
-          Hi! I am a Frontend engineer strongly focused on creating beautiful,
-          functional UI's
+          Hi! I am a Frontend Engineer strongly focused on creating beautiful
+          and functional UIs, and building Cross-Platform Web and Mobile Apps
         </p>
         <a href="mailto:gideonad.codez@gmail.com"
           ><button class="msg-btn">gideonad.codez@gmail.com</button></a
@@ -63,9 +66,12 @@
         <button class="resume">Download Resume</button>
       </header>
       <div class="links">
-        <a href="#work" onclick="javascript:void(0)">Work</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a href="#work" onclick="javascript:void(0)" class="work">Work</a>
+        <a href="#" class="resume">Resume</a>
+        <a href="#" class="contact">Contact</a>
+        <a href="javascript:void(0)" id="toggle"
+          ><i class="fa-solid fa-moon"></i
+        ></a>
       </div>
     </nav>
     <section class="work" id="work">
@@ -137,6 +143,7 @@
       </div>
     </section>
 
+    <footer>&copy; Gideon Appau. All rights reserved.</footer>
     <script src="./main.js"></script>
   </body>
 </html>

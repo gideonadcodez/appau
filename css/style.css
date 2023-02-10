@@ -110,7 +110,10 @@ body {
 }
 .topnav .links a:hover {
   color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
+}
+.topnav .links #toggle {
+  font-size: 20px;
+  margin-left: 30px;
 }
 
 .work {
@@ -147,6 +150,7 @@ body {
   width: 300px;
   margin-bottom: 16px;
   color: var(--head);
+  text-align: left;
 }
 .work .card .texts a {
   text-decoration: none;
@@ -204,6 +208,14 @@ body {
   transform: scale(1.03);
 }
 
+footer {
+  display: block;
+  margin: 2.5rem 0 2rem;
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
   body {
     font-size: 18px;
@@ -221,13 +233,26 @@ body {
     font-size: 24px;
   }
   .topnav header .msg-btn,
-.topnav header .resume {
+  .topnav header .resume {
     display: block;
     height: 60px;
     border-radius: 10px;
   }
-  .topnav .links {
+  .topnav .links .work,
+  .topnav .links .resume,
+  .topnav .links .contact {
     display: none;
+  }
+  .topnav .links #toggle {
+    position: fixed;
+    padding: 10px 20px;
+    background-color: var(--filler);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    bottom: 20px;
+    right: 0;
+    font-size: 24px;
+    border-radius: 50px;
   }
   .work {
     width: 100%;
