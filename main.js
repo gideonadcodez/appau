@@ -41,6 +41,6 @@ function myFunction() {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
-    toggle.style.marginRight = "0";
+    toggle.style.marginRight = "10px";
   }
 }
