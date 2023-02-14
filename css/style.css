@@ -250,7 +250,7 @@ footer {
     background-color: var(--filler);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    bottom: 20px;
+    top: 20px;
     right: 0;
     font-size: 24px;
     border-radius: 50px;
