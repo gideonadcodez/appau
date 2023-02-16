@@ -48,7 +48,7 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  width: 850px;
+  width: 1000px;
   margin-bottom: 40px;
   header {
     a {
@@ -223,8 +223,14 @@ footer {
   }
   .topnav {
     width: 100%;
+
     header {
       width: 100%;
+      h1 {
+       &::before{
+        content: "Hello, I am ";
+       }
+      }
       p {
         width: 100%;
         font-size: 24px;
