@@ -174,7 +174,7 @@ body {
   margin-bottom: 16px;
 }
 .work .card .texts button:hover {
-  box-shadow: 0 8px 15px hsla(216deg, 98%, 52%, 0.354);
+  box-shadow: 0 8px 15px hsla(216, 98%, 52%, 0.354);
   transform: scale(1.03);
 }
 .work .card .texts .tags {
