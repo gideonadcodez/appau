@@ -227,9 +227,9 @@ footer {
     header {
       width: 100%;
       h1 {
-       &::before{
-        content: "Hello, I am ";
-       }
+        &::before {
+          content: "Hello, I am ";
+        }
       }
       p {
         width: 100%;
