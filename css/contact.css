@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(https://lh3.googleusercontent.com/xmY30bzo1LERjEfZxzokxogphoYfg_wi9IVioFk62REfE4pP2XDUdgpzAuRG_HdiwCpD7YQ6Z5mg_7AHhjyj3BFBt9wv441DNO1aKNMBH71OdLQVvb9QUD0rpknyi2o5ny72gWWpm35Y4w5yoNolTQHq5wJRXBQiwDgoZTm0i8HnE0TSOu8bzpGOchP76ILXxapBTbS9uJzcsrFcT6A7syZCA4FW0-O07bxWwQjIv4ZpCTsBLt9hosWdbbMSc3VRSLKHd-38a0Nmbyq4x06d5L0qLVOVHNgCdHMQaaItUnp5MFAJ6K9sdID30qqXfeH9fpEWiKO68G0zvJKPq1LyUze-z3171amkaq-n4wc-2oppr8Mi_44nV6Vllxj3p7NQxyiOilQ2f8zAETk7yzwMVjYEgTMdyIzWQ8lv17Jad0Xx77t5e0ejOu0ez0f_ebwRZCwkgQo583sPV1tNJi9LMNHtD1JI6qLv1ag_epg6MjhnVYXoSo_C1kPRSIACCLJJh-zV7YVu6rwu5JQ-P0b4rgl6nWnd9vGu0lGf7W0Wb7HfZsb-cxOYxWs1ZO_hjCBaJDDkty6bOBVOB4O-zbTPWsXhpN1U1rKXGTSyzQMbm6eB-OokfHuJ1lTQo0IIJxyqoxJOqmahmnFyahHMqIMNrx46a1J5Z-gKo5IbxyfmsxFd36GPpRBo9p4srFbFeD_EOWwVWYvtGr3LRpo_tTHCVJE5KTdIiusfMnPawgg0dCv2_-jXshas4T2m6bNtn0xSSF8soPHGkXA1kXMAqLGkjZsIJyMoQqU7ATRSXDBoZm2sAvC897Jo5KbUW16gMXc8Np3hD7nsW1eFjV2drs561kn60z6k22NbsB3qCXz03965e7hf4qySZITxRtZU6tG-pxU9wxfbupBmq-HiWc7KT8_4NUrFGR0oBVxfinwlNDGIrDs6=w654-h537-s-no?authuser=0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title {
+  margin-bottom: 1em;
+  font-family: "Recoleta", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.form-container .img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+.form-container form label {
+  font-size: 13px;
+  color: slategray;
+  margin-left: 10px;
+}
+.form-container form input {
+  padding: 1.2em;
+  font-size: 17px;
+  background: #fff;
+  border: 2px solid #fafafa;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.form-container form textarea {
+  padding: 1.2em;
+  font-size: 17px;
+  background: #fff;
+  border: 2px solid #fafafa;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2em;
+}
+.form-container form input:focus,
+.form-container form textarea:focus {
+  border-color: #41416e;
+  outline: none;
+}
+.form-container form .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+.form-container form .buttons button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  background-color: transparent;
+}
+.form-container form .buttons .send {
+  flex: 2;
+  background: #41416e;
+}
+.form-container form .buttons .send:hover {
+  border: 2px solid #41416e;
+  color: #41416e;
+  background-color: transparent;
+}
+.form-container form .buttons .reset {
+  flex: 1;
+  border: 2px solid #cf333b;
+  color: #cf333b;
+}
+.form-container form .buttons .reset:hover {
+  background: #cf333b;
+  color: #fff;
+}
+
+@media only screen and (min-device-width: 0) and (max-device-width: 767px) {
+  body {
+    padding: 0;
+  }
+  body .form-container {
+    border-radius: 0;
+    width: 100%;
+    padding: 30px 20px;
+  }
+  body .form-container .img {
+    display: none;
+  }
+  body .form-container form {
+    width: 100%;
+    padding: 0;
+  }
+  body .form-container form button {
+    height: 60px;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,165 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-6DR42NTNSP"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-6DR42NTNSP");
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Gideon Appau | Mobile and Web App Developer</title>
-    <link rel="apple-touch-icon" href="/assets/favicon.ico" />
-    <meta
-      name="description"
-      content="Cross-Platform Web and Mobile App Developer "
-    />
-    <meta property="og:title" content="Gideon Appau | Software Engineer" />
-    <meta property="og:url" content="https://www.appau.netlify.app/" />
-    <script
-      src="https://kit.fontawesome.com/ef32282a06.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
   </head>
   <body>
     <nav class="topnav">
-      <header>
-        <h1>Gideon Appau</h1>
-        <p>
-          Frontend Engineer and UI UX Designer strongly focused on creating
-          beautiful and functional UIs. 
-        </p>
-        <p>Building the future with my peers through
-          code, design and innovative writing</p>
-        <a href="mailto:gideonad.codez@gmail.com"
-          ><button class="msg-btn">Leave a message</button></a
-        >
-        <button class="resume">Got a job for me?</button>
-      </header>
-      <div class="links">
-        <a href="#work" onclick="javascript:void(0)" class="work">Work</a>
-        <a href="#" class="resume">Resume</a>
-        <a href="#" class="contact">Contact</a>
-        <a href="javascript:void(0)" id="toggle"
-          ><i class="fa-solid fa-moon"></i
-        ></a>
+      <a href="index.html"><h1 class="logo">Ace.</h1></a>
+      <div class="links" id="links">
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reference.html">Reference</a>
+        <a href="docs.html">Documents</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0)" class="close">Close</a>
       </div>
+      <a href="javascript:void(0)" class="menu">&#9776;</a>
     </nav>
-    <section class="work" id="work">
-      <h1 class="title">My Work</h1>
-
-      <div class="card">
-        <img src="./assets/swipenews.png" alt="screenshot" loading="lazy" />
-        <div class="texts">
-          <h2 class="head">Swipe News</h2>
-          <p class="description">
-            Simple news feed app that serves users with realtime news based on
-            particular topics or search terms.
-          </p>
-          <a href="https://swipenews.netlify.app" class="btn"
-            ><button>See live preview</button></a
-          >
-          <ul class="tags">
-            <li class="tag" style="--color: #fe5d26">
-              <p>React JS & SASS</p>
-            </li>
-          </ul>
-        </div>
+    <section class="hero">
+      <div class="texts">
+        <h1>
+          Hello, I am <span>Gideon Appau</span>, <br />
+          ID:<span> BCICT22212</span>
+          <br />
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          aspernatur rerum, corrupti numquam maxime maiores porro consectetur.
+          Quas, necessitatibus odio dolores eaque earum laborum illo cum, fugiat
+          magnam animi qui?
+        </p>
+        <a href="about.html"><button>More about me</button></a>
       </div>
-      <div class="card">
-        <img src="/assets/Hubuser.png" alt="screenshot" loading="lazy" />
-        <div class="texts">
-          <h2 class="head">Hub User</h2>
-          <p class="description">
-            Explore the Github user database for Github users being it friends
-            and loved ones or total strangers. Its fun, you'll love it.
-          </p>
-          <a href="https://hubuser.netlify.app" class="btn"
-            ><button>See live preview</button></a
-          >
-          <ul class="tags">
-            <li class="tag" style="--color: #0e6ffc">
-              <p>Javascript , HTML & SASS</p>
-            </li>
-          </ul>
-        </div>
+      <div class="slider">
+        <div class="img-container"></div>
       </div>
-      <div class="card">
-        <img src="assets/grooove.png" alt="screenshot" />
-        <div class="texts">
-          <h2 class="head">Grooove</h2>
+    </section>
+    <section class="calender">
+      <h1>Academic Calender for 2022/23</h1>
+      <img
+        src="https://lh3.googleusercontent.com/INb1sKrLqcghB8Rri0jZwxAC9n8-XskYfi89AWogLOYaBdyzJuB73NgIjpO0zrhbJHoLh9JDEcQOwcoigZ9iy_w5051pkvCNGEX2oDPaMy29hGnd2tBEfoziM4H4sp3bCriv9mLxZJeyqJnlkHmjuBWTgWQ8fQB_jMeTQwQY1Ps201_LNR0AfaQuW_0VRtDs-ye_-lyYcOQfH2_M1I5Ky71D6NXvlanX0e6a2vBxHLWzIAa_9fi65KV2BoAAdPKNx0prJs06jRGJ4GgTaO5ZY7s8mfG-wAd8LQ3EJTXPqtjeUtePN-2FwIbNswfca61MMLe1XodQFj8Not_x6A0o_KHlqqA3RNuhlGDub2ZfAaXIyBAAk0_zAqmrQMfxTEu0vH4S0MKhcM832HzJMOK6wnSrn-NlAE0RI-z7PEYJs7Znz5eiCw08yVwi6Rjn01AuOD8oX4-jYedT3QF_jcBwOBNJ942ocXeb8Avn6RyH6KBhcBUckKtw70cQzH_2qnB7elaSIz7Dcq3L6FecfQmPTzpGRFHjrMXwIbofIf8INFvtMhpczUqFYMnQzQEkYq3P4uq45Qv5oaLL8G5tLLC3FP91hkdJ2nbBLHpy13R-LfLtD0NmlK30zcMYxQ572Ra30deXmWY7oN6ZevHRYyHgSUzSbv8jxJZJhcdbMCtmfTHzp4fvhDlkw8iliKJxUYzUEG-VV46Kyh5RK-FhCek32Vso2RCKWyt4V8bZeHZz_1pYWp0W4Q3_Ptgm3IbWXO4XKYf8jbeAFn3h_L7y7D-nkAwqVWrcku7iaPo_Roi-Jh7y7NY5XJo1EsmwASkQH6d7AG7grPrLikBNsekepNvYLW896eZ-rfyDMNFe1fCcZX4ZCjIQw8IhppgYgOemaSCQVtLCMmNP-6UNuBNjrU9IOiZ6d6PMl5ZDvE2LolKxFvBVK1gi=w705-h914-s-no?authuser=0"
+        alt="calender"
+        width="100%"
+        loading="lazy"
+      />
+    </section>
+    <section class="testimonial">
+      <h1>What friends and colleagues say about me</h1>
+      <div class="container">
+        <div class="box">
+          <div class="details">
+            <h4 class="name">Mica Nduamon</h4>
+            <p class="pos">Software Engineer at Google</p>
+          </div>
           <p class="description">
-            Move around the smart and confident way by tracking and sharing live
-            locations with friends and loved ones.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet earum
+            ipsam modi. Deleniti at dolor quisquam dicta iusto placeat!
+            Exercitationem nam veritatis accusantium ex quo incidunt quae quos
+            maxime! Doloremque?
           </p>
-
-          <a href="https://dribbble.com/shots/20649356-Grooove">
-            <button>Read case study</button>
-          </a>
-          <ul class="tags">
-            <li class="tag" style="--color: #34d186">
-              <p>Figma</p>
-            </li>
-          </ul>
         </div>
-      </div>
-      <div class="card">
-        <img src="https://placeimg.com/640/480/tech" alt="screenshot" />
-        <div class="texts">
-          <h2 class="head">Passenger</h2>
+        <div class="box">
+          <head>
+            <div class="details">
+              <h4 class="name">Albert Einstein</h4>
+              <p class="pos">AI Engineer at Open AI</p>
+            </div>
+          </head>
           <p class="description">
-            Move around the smart and confident way by tracking and sharing live
-            locations to friends and loved ones.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet earum
+            ipsam modi. Deleniti at dolor quisquam dicta iusto placeat!
+            Exercitationem nam veritatis accusantium ex quo incidunt quae quos
+            maxime! Doloremque?
           </p>
-          <button id="toggle">Read case study</button>
+        </div>
+        <div class="box">
+          <head>
+            <div class="details">
+              <h4 class="name">Savior Kwofie</h4>
+              <p class="pos">Network Engineer at Cisco Networks</p>
+            </div>
+          </head>
+          <p class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet earum
+            ipsam modi. Deleniti at dolor quisquam dicta iusto placeat!
+            Exercitationem nam veritatis accusantium ex quo incidunt quae quos
+            maxime! Doloremque?
+          </p>
         </div>
       </div>
     </section>
-    <script
-      data-name="BMC-Widget"
-      data-cfasync="false"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      data-id="aceslice"
-      data-description="Support me on Buy me a coffee!"
-      data-message="Thank you for visiting. Would you love to support my work?"
-      data-color="#0e6ffc"
-      data-position="Right"
-      data-x_margin="18"
-      data-y_margin="18"
-    ></script>
-    <footer>&copy; Gideon Appau. All rights reserved.</footer>
-    <script src="./main.js"></script>
+    <footer>
+      <div class="left"><h1>Ace.</h1></div>
+      <div class="middle">
+        <p>
+          I'm a creative soul, loving life's adventures with joy. I grow, learn,
+          and inspire others. My aspirations: to become a founder, an
+          entrepreneur, and a software engineer.
+        </p>
+        <div class="social">
+          <a href="https://wa.me/+233576128478"
+            ><button>Get in touch</button></a
+          >
+          <a href="https://www.linkedin.com/in/appaugideon/">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/aceslicehq">
+            <i class="fi fi-brands-twitter"></i>
+          </a>
+          <a href="https://github.com/aceslice">
+            <i class="fi fi-brands-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="right">
+        <h3>Quick Links</h3>
+        <div class="links">
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reference.html">Reference</a>
+          <a href="docs.html">Documents</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/script/main.js"></script>
   </body>
 </html>

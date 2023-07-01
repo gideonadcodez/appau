@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://lh3.googleusercontent.com/xmY30bzo1LERjEfZxzokxogphoYfg_wi9IVioFk62REfE4pP2XDUdgpzAuRG_HdiwCpD7YQ6Z5mg_7AHhjyj3BFBt9wv441DNO1aKNMBH71OdLQVvb9QUD0rpknyi2o5ny72gWWpm35Y4w5yoNolTQHq5wJRXBQiwDgoZTm0i8HnE0TSOu8bzpGOchP76ILXxapBTbS9uJzcsrFcT6A7syZCA4FW0-O07bxWwQjIv4ZpCTsBLt9hosWdbbMSc3VRSLKHd-38a0Nmbyq4x06d5L0qLVOVHNgCdHMQaaItUnp5MFAJ6K9sdID30qqXfeH9fpEWiKO68G0zvJKPq1LyUze-z3171amkaq-n4wc-2oppr8Mi_44nV6Vllxj3p7NQxyiOilQ2f8zAETk7yzwMVjYEgTMdyIzWQ8lv17Jad0Xx77t5e0ejOu0ez0f_ebwRZCwkgQo583sPV1tNJi9LMNHtD1JI6qLv1ag_epg6MjhnVYXoSo_C1kPRSIACCLJJh-zV7YVu6rwu5JQ-P0b4rgl6nWnd9vGu0lGf7W0Wb7HfZsb-cxOYxWs1ZO_hjCBaJDDkty6bOBVOB4O-zbTPWsXhpN1U1rKXGTSyzQMbm6eB-OokfHuJ1lTQo0IIJxyqoxJOqmahmnFyahHMqIMNrx46a1J5Z-gKo5IbxyfmsxFd36GPpRBo9p4srFbFeD_EOWwVWYvtGr3LRpo_tTHCVJE5KTdIiusfMnPawgg0dCv2_-jXshas4T2m6bNtn0xSSF8soPHGkXA1kXMAqLGkjZsIJyMoQqU7ATRSXDBoZm2sAvC897Jo5KbUW16gMXc8Np3hD7nsW1eFjV2drs561kn60z6k22NbsB3qCXz03965e7hf4qySZITxRtZU6tG-pxU9wxfbupBmq-HiWc7KT8_4NUrFGR0oBVxfinwlNDGIrDs6=w654-h537-s-no?authuser=0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+}
+main .info {
+  flex: 1;
+  padding: 10px;
+}
+main .info p {
+  line-height: 1.6em;
+  color: #41416e;
+  margin-bottom: 2em;
+  font-size: 20px;
+}
+main .info .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .info .social a {
+  text-decoration: none;
+  font-size: 20px;
+  color: slategray;
+}
+main .info .social a:hover {
+  color: #41416e;
+  transform: scale(1.02);
+}
+main .info .social button {
+  padding: 15px 40px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 5px 5px #41416e;
+  background: transparent;
+  border: 2px solid #41416e;
+  color: #41416e;
+}
+main .info .social button:hover {
+  box-shadow: none;
+}
+main .about {
+  flex: 2;
+}
+main .about h1,
+main .about h2,
+main .about h3,
+main .about h4,
+main .about h5,
+main .about h6 {
+  margin-bottom: 1em;
+  font-family: "Recoleta", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .about p,
+main .about li {
+  line-height: 1.6em;
+  color: slategray;
+  margin-bottom: 1em;
+  font-size: 17px;
+  list-style-type: none;
+}
+main .about fieldset {
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2509803922);
+  background: rgba(255, 255, 255, 0.062745098);
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+  margin-bottom: 2em;
+}
+main .about fieldset legend {
+  padding: 0 20px;
+  font-family: Recoleta, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: slategray;
+  font-size: 12px;
+}
+main .about fieldset img {
+  width: 100%;
+  border-radius: 5px;
+}
+main .about fieldset:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (min-device-width: 0) and (max-device-width: 767px) {
+  main {
+    flex-direction: column-reverse;
+    padding: 15px;
+    width: 100%;
+    gap: 1em;
+  }
+  main .about {
+    width: 100%;
+  }
+  main .about fieldset {
+    width: 100%;
+  }
+}/*# sourceMappingURL=about.css.map */
