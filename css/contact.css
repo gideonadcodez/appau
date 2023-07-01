@@ -107,12 +107,12 @@ p {
 }
 .form-container form .buttons .reset {
   flex: 1;
-  border: 2px solid #cf333b;
   color: #cf333b;
 }
 .form-container form .buttons .reset:hover {
-  background: #cf333b;
-  color: #fff;
+  background: transparent;
+  color: #cf333b;
+  border: 2px dashed #cf333b;
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
