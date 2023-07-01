@@ -27,7 +27,7 @@ body {
   color: #41416e;
   transform: scale(1.02);
 }
-.social button {
+.social .prm {
   padding: 15px 30px;
   margin-right: 16px;
   border: none;
@@ -40,7 +40,7 @@ body {
   border: 2px solid #41416e;
   color: #41416e;
 }
-.social button:hover {
+.social .prm:hover {
   box-shadow: none;
 }
 
