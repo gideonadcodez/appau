@@ -41,19 +41,23 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background: #ffffff10;
-  backdrop-filter: blur(35px);
   position: sticky;
   top: 0;
   left: 0;
   margin-bottom: 1em;
   z-index: 2;
   .logo {
-    font-size: 30px;
+    font-size: 20px;
     color: $primary;
     font-family: $secondary-font;
+    padding: 10px 20px;
+    background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
+    border-radius:40px;
   }
   .links {
+    padding: 20px 40px;
+    background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
+    border-radius: 40px;
     .close {
       display: none;
     }
@@ -269,9 +273,8 @@ footer {
     padding: 0;
   }
   .topnav {
-    background: #fff;
-    padding: 15px;
     margin-bottom: 0;
+    padding: 5px;
     .links {
       display: block;
       position: fixed;
@@ -279,7 +282,6 @@ footer {
       width: 100%;
       top: 0;
       background: #fff;
-      backdrop-filter: blur(35px);
       left: 0;
       display: flex;
       align-items: center;
@@ -297,8 +299,11 @@ footer {
     }
     .menu {
       display: block;
-      font-size: 30px;
+      font-size: 28px;
       color: $primary;
+      background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
+      padding: 8px 15px;
+      border-radius: 100%;
     }
   }
   .hero {
