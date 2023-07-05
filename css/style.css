@@ -280,6 +280,11 @@ footer .right .links a {
     padding: 15px;
     background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
   }
+  .topnav .logo {
+    padding: 0;
+    font-size: 30px;
+    background: transparent;
+  }
   .topnav .links {
     display: block;
     position: fixed;
