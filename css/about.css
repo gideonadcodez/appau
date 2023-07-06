@@ -80,8 +80,6 @@ main .about fieldset {
   padding: 15px;
   border-radius: 8px;
   border: 2px solid #f6f4f4;
-  -webkit-backdrop-filter: blur(35px);
-          backdrop-filter: blur(35px);
   margin-bottom: 2em;
 }
 main .about fieldset legend {
