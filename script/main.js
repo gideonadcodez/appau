@@ -10,12 +10,7 @@ close.addEventListener("click", () => {
 });
 let index = 0;
 // Container of images to be displayed in the slider
-const images = [
-  "silhoutte.jpeg",
-  "me5.jpeg", 
-  "me4.jpeg",
-  "gdsc.jpeg"
-];
+const images = ["silhoutte.jpeg", "me5.jpeg", "me4.jpeg", "gdsc.jpeg"];
 const slider = document.querySelector(".img-container");
 
 // If element exists on page, run the slider
