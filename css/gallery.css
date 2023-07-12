@@ -35,7 +35,6 @@ p {
 .container .image-container {
   border-radius: 8px;
   border: 2px solid #f6f4f4;
-  background: #fff;
   width: 30%;
   overflow: hidden;
 }

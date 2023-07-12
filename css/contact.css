@@ -5,6 +5,7 @@
 }
 
 body {
+  background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,24 +23,25 @@ body {
 p {
   line-height: 1.6em;
   margin-bottom: 1em;
-  font-size: 20px;
   text-align: center;
 }
 
 .form-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   padding: 40px;
-  background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
+  background: #fff;
   border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .form-container form {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 70%;
+  padding: 40px;
+  width: 80%;
+  margin: 0 auto;
 }
 .form-container form label {
   font-size: 13px;
@@ -50,17 +52,17 @@ p {
   padding: 1.2em;
   font-size: 17px;
   background: #fff;
-  border: 2px solid #fafafa;
+  border: 2px solid #f0f0f0;
   outline: none;
   border-radius: 10px;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
 }
 .form-container form textarea {
   padding: 1.2em;
   font-size: 17px;
   background: #fff;
-  border: 2px solid #fafafa;
+  border: 2px solid #f0f0f0;
   outline: none;
   border-radius: 10px;
   width: 100%;
@@ -74,23 +76,24 @@ p {
 }
 .form-container form .buttons {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  gap: 8px;
+  gap: 32px;
   width: 100%;
 }
 .form-container form .buttons button {
   height: 60px;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   background-color: transparent;
+  border-radius: 5px;
 }
 .form-container form .buttons .send {
-  flex: 2;
+  flex: 1.5;
   background: #41416e;
+  order: 2;
 }
 .form-container form .buttons .send:hover {
   border: 2px solid #41416e;
@@ -99,10 +102,6 @@ p {
 }
 .form-container form .buttons .reset {
   flex: 1;
-  color: #cf333b;
-}
-.form-container form .buttons .reset:hover {
-  background: transparent;
   color: #cf333b;
   border: 2px dashed #cf333b;
 }
@@ -115,6 +114,7 @@ p {
     border-radius: 0;
     width: 100%;
     padding: 30px 20px;
+    margin-bottom: 0;
   }
   body .form-container form {
     width: 100%;
