@@ -69,6 +69,12 @@ p {
   height: 150px;
   margin-bottom: 2em;
 }
+.form-container form input::-moz-placeholder, .form-container form textarea::-moz-placeholder {
+  color: lightgray;
+}
+.form-container form input::placeholder, .form-container form textarea::placeholder {
+  color: lightgray;
+}
 .form-container form input:focus,
 .form-container form textarea:focus {
   border-color: #41416e;
@@ -120,7 +126,10 @@ p {
     width: 100%;
     padding: 0;
   }
-  body .form-container form button {
+  body .form-container form .buttons {
+    gap: 8px;
+  }
+  body .form-container form .buttons button {
     height: 60px;
   }
 }/*# sourceMappingURL=contact.css.map */

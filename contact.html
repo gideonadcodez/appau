@@ -7,8 +7,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <nav class="topnav">
@@ -24,42 +23,55 @@
       <a href="javascript:void(0)" class="menu">&#9776;</a>
     </nav>
     <main>
-      
-      
       <div class="form-container">
         <div>
           <h1 class="title">Lets Chat</h1>
-        <p>
-          Looking forward to meet you and learn more about you. Feel free to get
-          in touch for inquiries or a virtual coffee.
-        </p>
+          <p>
+            Looking forward to meet you and learn more about you. Feel free to
+            get in touch for inquiries or a virtual coffee.
+          </p>
         </div>
         <form>
           <label for="name">Your name</label>
-          <input type="text" name="name" placeholder="eg. Kwame Nkrumah" />
+          <input
+            type="text"
+            id="name"
+            placeholder="eg. Kwame Nkrumah"
+            autocomplete="name"
+          />
 
           <label for="email">Email</label>
           <input
             type="email"
-            name="email"
+            id="email"
             placeholder="eg. kwamenkrumah@xyz.com"
+            autocomplete="email"
           />
 
           <label for="phone">Your number</label>
-          <input type="number" maxlength="14" placeholder="eg. 012-345-6789" />
+          <input
+            type="number"
+            maxlength="14"
+            placeholder="eg. 012-345-6789"
+            autocomplete ="tel"
+            id="phone"
+          />
 
           <label for="subject">Subject</label>
           <input
+            id="subject"
             type="text"
             placeholder="The subject of your messasge goes here"
+            autocomplete="on"
           />
 
-          <label for="messasge">Your message</label>
+          <label for="message">Your message</label>
           <textarea
-            name="message"
+            id="message"
             cols="30"
             rows="10"
             placeholder="Your wonderful message for me"
+            autocomplete="on"
           ></textarea>
           <div class="buttons">
             <button class="send">Send message</button>

@@ -68,7 +68,10 @@ p {
       height: 150px;
       margin-bottom: 2em;
     }
-
+    input::placeholder,
+    textarea::placeholder {
+      color: lightgray;
+    }
     input:focus,
     textarea:focus {
       border-color: #41416e;
@@ -118,8 +121,11 @@ p {
       form {
         width: 100%;
         padding: 0;
-        button {
-          height: 60px;
+        .buttons {
+          gap: 8px;
+          button {
+            height: 60px;
+          }
         }
       }
     }
