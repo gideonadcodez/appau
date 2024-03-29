@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +47,6 @@ $layer_dark: #2c2c2c;
     margin: 0 auto;
     padding: 2rem;
     max-width: 1280px;
-
   }
 }
 
@@ -122,7 +122,7 @@ button {
   border: 1.6px solid var(--border);
   border-radius: 16px;
   padding: 10px;
-  .division{
+  .division {
     display: flex;
     gap: 20px;
   }
@@ -151,7 +151,6 @@ button {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column;
     .avtr {
       height: 200px;
       box-shadow: 0 0 30px var(--border);
@@ -159,6 +158,7 @@ button {
       margin-bottom: 32px;
       height: 200px;
       border: 2px solid var(--border);
+      order: 1;
       background-color: var(--accent);
     }
     .texts {
@@ -191,13 +191,13 @@ button {
     }
   }
 }
-.experience{
+.experience {
   background: var(--border);
   padding: 15px;
   border-radius: 16px;
   flex: 1;
 }
-.projects{
+.projects {
   background: var(--border);
   padding: 15px;
   border-radius: 16px;

@@ -144,7 +144,6 @@ button:hover {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
 }
 .hero .details .avtr {
   height: 200px;
@@ -153,6 +152,7 @@ button:hover {
   margin-bottom: 32px;
   height: 200px;
   border: 2px solid var(--border);
+  order: 1;
   background-color: var(--accent);
 }
 .hero .details .texts h1 {
