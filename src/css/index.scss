@@ -4,4 +4,224 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Syne", sans-serif;
+  transition: 200ms ease-in-out;
+}
+
+$light_bg: #f9fafc;
+$light_accent: #fff;
+$light_primary_color: #2f2f2f;
+$light_secondary_color: #616060;
+$border_light: #f8fafc;
+$layer_light: #fff;
+
+$dark_bg: #121212;
+$dark_accent: #1e1e1e;
+$dark_primary_color: #eee;
+$dark_secondary_color: #888;
+$border_dark: #282828;
+$layer_dark: #2c2c2c;
+.light-theme {
+  --bg: #{$light_bg};
+  --accent: #{$light_accent};
+  --primary-color: #{$light_primary_color};
+  --secondary-color: #{$light_secondary_color};
+  --border: #{$border_light};
+  --layer: #{$layer_light};
+}
+
+.dark-theme {
+  --bg: #{$dark_bg};
+  --accent: #{$dark_accent};
+  --primary-color: #{$dark_primary_color};
+  --secondary-color: #{$dark_secondary_color};
+  --border: #{$border_dark};
+  --layer: #{$layer_dark};
+}
+
+.App {
+  background-color: var(--bg);
+  color: var(--secondary-color);
+  min-height: 100vh;
+  .container {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1280px;
+
+  }
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.3;
+}
+.ico {
+  height: 24px;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: none;
+  outline: none;
+  padding: 10px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.primary-btn {
+  color: var(--primary-color);
+  background: var(--layer);
+  border: 2px solid var(--accent);
+}
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid var(--border);
+  color: var(--secondary-color);
+}
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--accent);
+  padding: 14px;
+  border: 1.6px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: 15px;
+  .icons {
+    display: flex;
+    gap: 16px;
+    img {
+      cursor: pointer;
+      &:hover {
+        background: var(--border);
+        border-radius: 100%;
+      }
+    }
+  }
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+// HERO
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.home {
+  background: var(--accent);
+  border: 1.6px solid var(--border);
+  border-radius: 16px;
+  padding: 10px;
+  .division{
+    display: flex;
+    gap: 20px;
+  }
+}
+.role {
+  font-size: 18px;
+  font-weight: 500;
+}
+.hero {
+  padding: 20px;
+  margin-bottom: 40px;
+
+  .avail {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: #0e6ffc19;
+    color: #0e6ffc;
+    font-size: 12px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    .avtr {
+      height: 200px;
+      box-shadow: 0 0 30px var(--border);
+      border-radius: 24px;
+      margin-bottom: 32px;
+      height: 200px;
+      border: 2px solid var(--border);
+      background-color: var(--accent);
+    }
+    .texts {
+      h1 {
+        font-weight: 500;
+        color: var(--primary-color);
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 16px;
+        font-size: 18px;
+      }
+      span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 4px 8px;
+        background-color: var(--border);
+        border-radius: 8px;
+        img {
+          height: 18px;
+        }
+      }
+    }
+    .btns {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+    }
+  }
+}
+.experience{
+  background: var(--border);
+  padding: 15px;
+  border-radius: 16px;
+  flex: 1;
+}
+.projects{
+  background: var(--border);
+  padding: 15px;
+  border-radius: 16px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .card {
+      background-color: var(--layer);
+      padding: 32px;
+      border-radius: 16px;
+      img {
+        height: 35px;
+        margin-bottom: 16px;
+      }
+      .title {
+        font-size: 24px;
+        color: var(--primary-color);
+        margin-bottom: 8px;
+      }
+      .content {
+        margin-bottom: 32px;
+      }
+    }
+  }
 }
