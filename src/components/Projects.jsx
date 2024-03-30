@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import link from "../assets/icons/link.svg";
 
 const Projects = () => {
   const cardDetails = {
@@ -9,12 +10,15 @@ const Projects = () => {
     <div className="projects">
       <div className="head">
         <p className="role"> &#8226; Projects</p>
-        <button className="primary-btn" style={{border: "none"}}>View All</button>
+        <button className="primary-btn" style={{ border: "none" }}>
+        <img src={link} alt="" className="ico"/>
+          View All
+        </button>
       </div>
       <div className="container">
         <ProjectCard />
         <ProjectCard />
-        <ProjectCard/>
+        <ProjectCard />
       </div>
     </div>
   );

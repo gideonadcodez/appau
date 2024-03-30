@@ -42,20 +42,20 @@ body {
 }
 
 .ico {
-  height: 24px;
+  height: 26px;
 }
 
 button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
   border: none;
   outline: none;
   padding: 10px 32px;
   border-radius: 12px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
 }
 button:hover {
   transform: scale(1.02);
@@ -64,7 +64,7 @@ button:hover {
 .primary-btn {
   color: var(--primary-color);
   background: var(--layer);
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border);
 }
 
 .secondary-btn {
@@ -85,7 +85,7 @@ button:hover {
 }
 .topnav .icons {
   display: flex;
-  gap: 16px;
+  gap: 20px;
 }
 .topnav .icons img {
   cursor: pointer;
@@ -121,7 +121,7 @@ button:hover {
 
 .role {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hero {
@@ -204,6 +204,7 @@ button:hover {
   background-color: var(--layer);
   padding: 32px;
   border-radius: 16px;
+  border: 1.6px solid var(--border);
 }
 .projects .container .card img {
   height: 35px;
@@ -216,4 +217,7 @@ button:hover {
 }
 .projects .container .card .content {
   margin-bottom: 32px;
+}
+.projects .container .card a {
+  color: var(--primary-color);
 }/*# sourceMappingURL=index.css.map */

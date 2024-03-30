@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="icons8_Plus">
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="icons8_Plus" fill="none" stroke="none" />
+    <path d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z" id="Circle" fill="#5F5C5C" fill-rule="evenodd" stroke="none" clip-path="url(#clip_1)" />
+    <path d="M17 13L7 13C6.448 13 6 12.552 6 12L6 12C6 11.448 6.448 11 7 11L17 11C17.552 11 18 11.448 18 12L18 12C18 12.552 17.552 13 17 13L17 13Z" id="Shape" fill="#fff" stroke="none" clip-path="url(#clip_1)" />
+    <path d="M11 17L11 7C11 6.448 11.448 6 12 6L12 6C12.552 6 13 6.448 13 7L13 17C13 17.552 12.552 18 12 18L12 18C11.448 18 11 17.552 11 17L11 17Z" id="Shape" fill="#fff" stroke="none" clip-path="url(#clip_1)" />
+  </g>
+</svg>

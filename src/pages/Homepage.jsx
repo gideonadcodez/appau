@@ -1,7 +1,9 @@
-import bookmark from "../assets/icons/bookmark.svg";
+import bookmark from "../assets/icons/ok.svg";
 import Projects from "../components/Projects";
 import logo from "../assets/icons/Grouplogo.svg";
 import avatar from "../assets/icons/Frame 6.svg"
+import plus from "../assets/icons/briefcase.svg"
+
 
 const Homepage = () => {
   return (
@@ -30,7 +32,7 @@ const Homepage = () => {
             </p>
             <div className="btns">
               <button className="primary-btn">
-                <img src={bookmark} alt="" className="ico" />
+                <img src={plus} alt="" className="ico" />
                 Hire Gideon
               </button>
               <button className="secondary-btn">

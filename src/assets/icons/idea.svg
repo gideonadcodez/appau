@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Idea">
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="Idea" fill="none" stroke="none" />
+    <path d="M16.667 15.489C18.683 14.036 20 11.675 20 9C20 4.582 16.418 1 12 1C7.582 1 4 4.582 4 9C4 11.675 5.317 14.036 7.333 15.489L7.976 18L16.024 18L16.667 15.489L16.667 15.489Z" id="Shape" fill="#5f5c5c" fill-opacity="0.35" stroke="none" clip-path="url(#clip_1)" />
+    <path d="M11.329 22L11.329 22C11.328 22 11.329 22 11.329 22L11.329 22Z" id="Shape" fill="#5f5c5c" fill-opacity="0.35" stroke="none" clip-path="url(#clip_1)" />
+    <path d="M15.577 19.744L16.024 18L7.976 18L8.422 19.744C8.762 21.071 9.958 22 11.328 22L12.671 22C14.042 22 15.238 21.071 15.577 19.744L15.577 19.744Z" id="Shape" fill="#5f5c5c" stroke="none" clip-path="url(#clip_1)" />
+  </g>
+</svg>
